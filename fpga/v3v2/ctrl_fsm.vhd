@@ -5,9 +5,9 @@ entity ctrl_fsm is
   port(
     clk     : in  std_logic;
     rst     : in  std_logic;
-    ss_rise : in  std_logic;           -- flanco ? de SS (viene del SPI)
+    ss_rise : in  std_logic;           
     byte_in : in  std_logic_vector(7 downto 0);
-    load_pwm: out std_logic;           -- pulso: datos listos
+    load_pwm: out std_logic;           
     control : out std_logic_vector(7 downto 0);
     duty    : out std_logic_vector(7 downto 0)
   );
