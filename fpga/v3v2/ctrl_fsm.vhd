@@ -1,4 +1,4 @@
-library IEEE;
+⁶library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity ctrl_fsm is
@@ -28,14 +28,14 @@ begin
         load_pwm  <= '0';
       else
         load_pwm <= '0';
-        if ss_rise='1' then             -- acaba de llegar un byte
+        if ss_rise='1' then 
           case state is
             when EXPECT_CTRL =>
               reg_ctrl <= byte_in;
               state    <= EXPECT_DUTY;
             when EXPECT_DUTY =>
               reg_duty <= byte_in;
-              load_pwm <= '1';           -- pareja completa
+              load_pwm <= '1';           
               state    <= EXPECT_CTRL;
           end case;
         end if;
