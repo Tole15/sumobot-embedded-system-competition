@@ -31,13 +31,13 @@ architecture Behavioral of spi_slave_sync is
   signal shift_reg : std_logic_vector(DATA_WIDTH-1 downto 0) := (others=>'0');
   signal final_reg : std_logic_vector(DATA_WIDTH-1 downto 0) := (others=>'0');
 
-  -- Contador de timeout de SCLK (opcional, aquí simple)
+  -- Contador de timeout de SCLK
   constant TIMEOUT_MAX : integer := 1000;
   signal timeout_cnt   : integer range 0 to TIMEOUT_MAX := 0;
 begin
   data_out <= final_reg;
 
-  -- Doble sincronización entradas
+  
   sync_inputs: process(clk_sys, reset_sys)
   begin
     if reset_sys='1' then
@@ -54,7 +54,7 @@ begin
     end if;
   end process;
 
-  -- Detecta flanco de subida de SCLK
+ 
   detect_sclk: process(clk_sys, reset_sys)
   begin
     if reset_sys='1' then
@@ -69,7 +69,7 @@ begin
     end if;
   end process;
 
-  -- FSM con timeout y espera de SS alta
+  
   spi_fsm: process(clk_sys, reset_sys)
   begin
     if reset_sys='1' then
@@ -94,7 +94,7 @@ begin
             if timeout_cnt < TIMEOUT_MAX then
               timeout_cnt <= timeout_cnt + 1;
             else
-              rState      <= ST_WAIT_SS_HIGH;  -- abortar
+              rState      <= ST_WAIT_SS_HIGH;  
             end if;
           else
             final_reg <= shift_reg;
