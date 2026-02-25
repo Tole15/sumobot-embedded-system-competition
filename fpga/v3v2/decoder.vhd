@@ -17,45 +17,41 @@ end entity;
 
 architecture rtl of decoder is
   -- Alias directos a los bits del byte CONTROL
-  signal sel_pwm_M1  : std_logic;  -- bit-1
-  signal dir_M1      : std_logic;  -- bit-0
-  signal sel_pwm_M2  : std_logic;  -- bit-3
-  signal dir_M2      : std_logic;  -- bit-2
-  signal en_code     : std_logic_vector(1 downto 0);  -- bits-5:4
+  signal sel_pwm_M1  : std_logic;  
+  signal dir_M1      : std_logic;  
+  signal sel_pwm_M2  : std_logic; 
+  signal dir_M2      : std_logic; 
+  signal en_code     : std_logic_vector(1 downto 0);  
 
-  -- Señales internas para habilitación
+  
   signal r_en_m1_i, l_en_m1_i : std_logic;
   signal r_en_m2_i, l_en_m2_i : std_logic;
 begin
-  -- Extrae alias en tiempo de ejecución (no es constante)
+  
   sel_pwm_M1 <= control(1);
   dir_M1     <= control(0);
   sel_pwm_M2 <= control(3);
   dir_M2     <= control(2);
   en_code    <= control(5 downto 4);
 
-  ---------------------------------------------------------------------------
-  -- Duty-cycle nibbles
+ 
   duty_M1 <= duty(7 downto 4);
   duty_M2 <= duty(3 downto 0);
 
-  ---------------------------------------------------------------------------
-  -- Habilitación + sentido (una sola asignación por puerto)
-  -- Motor 1
+  
   r_en_m1_i <= '1' when ((en_code="00" or en_code="10") and dir_M1='0') else '0';
   l_en_m1_i <= '1' when ((en_code="00" or en_code="10") and dir_M1='1') else '0';
-  -- Motor 2
+  
   r_en_m2_i <= '1' when ((en_code="01" or en_code="10") and dir_M2='0') else '0';
   l_en_m2_i <= '1' when ((en_code="01" or en_code="10") and dir_M2='1') else '0';
 
-  -- Conectar internas a los puertos
+  
   R_EN_M1 <= r_en_m1_i;
   L_EN_M1 <= l_en_m1_i;
   R_EN_M2 <= r_en_m2_i;
   L_EN_M2 <= l_en_m2_i;
 
-  ---------------------------------------------------------------------------
-  -- Selección de la línea PWM (aquí sólo pones '1' en la línea elegida)
+  
   R_PWM_M1 <= '1' when sel_pwm_M1='0' else '0';
   L_PWM_M1 <= '1' when sel_pwm_M1='1' else '0';
   R_PWM_M2 <= '1' when sel_pwm_M2='0' else '0';
