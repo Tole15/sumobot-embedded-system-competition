@@ -190,6 +190,4 @@ This project serves as:
 
 ---
 
-# License
 
-(Define license here)
