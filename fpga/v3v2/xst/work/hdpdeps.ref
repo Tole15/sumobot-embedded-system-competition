@@ -1,0 +1,52 @@
+V3 41
+FL /home/ise/v3/ContGen.vhd 2025/05/02.15:41:47 P.20131013
+EN work/ContGen 1746573848 FL /home/ise/v3/ContGen.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/ContGen/behavioral 1746573849 \
+      FL /home/ise/v3/ContGen.vhd EN work/ContGen 1746573848
+FL /home/ise/v3/ctrl_fsm.vhd 2025/05/05.13:32:36 P.20131013
+EN work/ctrl_fsm 1746573854 FL /home/ise/v3/ctrl_fsm.vhd PB ieee/std_logic_1164 1381692176
+AR work/ctrl_fsm/rtl 1746573855 \
+      FL /home/ise/v3/ctrl_fsm.vhd EN work/ctrl_fsm 1746573854
+FL /home/ise/v3/decoder.vhd 2025/05/05.13:34:37 P.20131013
+EN work/decoder 1746573856 FL /home/ise/v3/decoder.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/decoder/rtl 1746573857 \
+      FL /home/ise/v3/decoder.vhd EN work/decoder 1746573856
+FL /home/ise/v3/motor_ctrl_top.vhd 2025/05/05.13:32:36 P.20131013
+EN work/motor_ctrl_top 1746573860 FL /home/ise/v3/motor_ctrl_top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/pwm_pkg 1746573847
+AR work/motor_ctrl_top/structural 1746573861 \
+      FL /home/ise/v3/motor_ctrl_top.vhd EN work/motor_ctrl_top 1746573860 \
+      CP work/spi_slave_sync CP work/ctrl_fsm CP work/decoder CP work/pwm_module
+FL /home/ise/v3/pwm_module.vhd 2025/05/02.15:49:45 P.20131013
+EN work/pwm_module 1746573858 FL /home/ise/v3/pwm_module.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/pwm_pkg 1746573847
+AR work/pwm_module/behavioral 1746573859 \
+      FL /home/ise/v3/pwm_module.vhd EN work/pwm_module 1746573858 CP ContGen \
+      CP regP
+FL /home/ise/v3/pwm_pkg.vhd 2025/05/02.15:52:55 P.20131013
+PH work/pwm_pkg 1746573846 FL /home/ise/v3/pwm_pkg.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 CD ContGen CD regP CD sipo_reg
+PB work/pwm_pkg 1746573847 \
+      FL /home/ise/v3/pwm_pkg.vhd PH work/pwm_pkg 1746573846
+FL /home/ise/v3/regP.vhd 2025/05/02.15:41:47 P.20131013
+EN work/regP 1746573850 FL /home/ise/v3/regP.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/regP/behavioral 1746573851 \
+      FL /home/ise/v3/regP.vhd EN work/regP 1746573850
+FL /home/ise/v3/spi_slave_sync.vhd 2025/05/05.13:32:36 P.20131013
+EN work/spi_slave_sync 1746573852 FL /home/ise/v3/spi_slave_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/spi_slave_sync/Behavioral 1746573853 \
+      FL /home/ise/v3/spi_slave_sync.vhd EN work/spi_slave_sync 1746573852
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/ContGen.vhd 2025/05/02.09:41:47 P.20131013
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/ctrl_fsm.vhd 2025/05/05.07:32:36 P.20131013
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/decoder.vhd 2025/05/05.07:34:37 P.20131013
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/motor_ctrl_top.vhd 2025/05/05.07:32:36 P.20131013
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/pwm_module.vhd 2025/05/02.09:49:45 P.20131013
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/pwm_pkg.vhd 2025/05/02.09:52:55 P.20131013
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/regP.vhd 2025/05/02.09:41:47 P.20131013
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/spi_slave_sync.vhd 2025/05/05.07:32:36 P.20131013

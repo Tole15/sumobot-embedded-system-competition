@@ -1,0 +1,594 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: motor_ctrl_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "motor_ctrl_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "motor_ctrl_top"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-vq100
+
+---- Source Options
+Top Module Name                    : motor_ctrl_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_pkg.vhd" in Library work.
+Package <pwm_pkg> compiled.
+Package body <pwm_pkg> compiled.
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd" in Library work.
+Entity <ContGen> compiled.
+Entity <ContGen> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/regP.vhd" in Library work.
+Entity <regP> compiled.
+Entity <regP> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/spi_slave_sync.vhd" in Library work.
+Entity <spi_slave_sync> compiled.
+Entity <spi_slave_sync> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ctrl_fsm.vhd" in Library work.
+Entity <ctrl_fsm> compiled.
+Entity <ctrl_fsm> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/decoder.vhd" in Library work.
+Entity <decoder> compiled.
+Entity <decoder> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_module.vhd" in Library work.
+Entity <pwm_module> compiled.
+Entity <pwm_module> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd" in Library work.
+Entity <motor_ctrl_top> compiled.
+Entity <motor_ctrl_top> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <motor_ctrl_top> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <spi_slave_sync> in library <work> (architecture <Behavioral>) with generics.
+	DATA_WIDTH = 8
+
+Analyzing hierarchy for entity <ctrl_fsm> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <decoder> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <pwm_module> in library <work> (architecture <behavioral>) with generics.
+	CNT_WIDTH = 4
+	DIV_CONST = 2499
+	DUTY_WIDTH = 4
+
+Analyzing hierarchy for entity <ContGen> in library <work> (architecture <behavioral>) with generics.
+	Cuenta_Fin = 2499
+	Nbits = 12
+
+Analyzing hierarchy for entity <ContGen> in library <work> (architecture <behavioral>) with generics.
+	Cuenta_Fin = 15
+	Nbits = 4
+
+Analyzing hierarchy for entity <regP> in library <work> (architecture <behavioral>) with generics.
+	WIDTH = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <motor_ctrl_top> in library <work> (Architecture <structural>).
+WARNING:Xst:753 - "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd" line 107: Unconnected output port 'error' of component 'ctrl_fsm'.
+Entity <motor_ctrl_top> analyzed. Unit <motor_ctrl_top> generated.
+
+Analyzing generic Entity <spi_slave_sync> in library <work> (Architecture <Behavioral>).
+	DATA_WIDTH = 8
+Entity <spi_slave_sync> analyzed. Unit <spi_slave_sync> generated.
+
+Analyzing Entity <ctrl_fsm> in library <work> (Architecture <rtl>).
+Entity <ctrl_fsm> analyzed. Unit <ctrl_fsm> generated.
+
+Analyzing Entity <decoder> in library <work> (Architecture <rtl>).
+Entity <decoder> analyzed. Unit <decoder> generated.
+
+Analyzing generic Entity <pwm_module> in library <work> (Architecture <behavioral>).
+	CNT_WIDTH = 4
+	DIV_CONST = 2499
+	DUTY_WIDTH = 4
+Entity <pwm_module> analyzed. Unit <pwm_module> generated.
+
+Analyzing generic Entity <ContGen.1> in library <work> (Architecture <behavioral>).
+	Cuenta_Fin = 2499
+	Nbits = 12
+Entity <ContGen.1> analyzed. Unit <ContGen.1> generated.
+
+Analyzing generic Entity <ContGen.2> in library <work> (Architecture <behavioral>).
+	Cuenta_Fin = 15
+	Nbits = 4
+Entity <ContGen.2> analyzed. Unit <ContGen.2> generated.
+
+Analyzing generic Entity <regP> in library <work> (Architecture <behavioral>).
+	WIDTH = 4
+Entity <regP> analyzed. Unit <regP> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <spi_slave_sync>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/spi_slave_sync.vhd".
+    Found finite state machine <FSM_0> for signal <rState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk_sys                   (rising_edge)        |
+    | Reset              | reset_sys                 (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st_idle                                        |
+    | Power Up State     | st_idle                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <final_reg>.
+    Found 1-bit register for signal <MOSI_sync>.
+    Found 1-bit register for signal <MOSI_sync2>.
+    Found 10-bit comparator less for signal <rState$cmp_lt0000> created at line 94.
+    Found 1-bit register for signal <sclk_prev>.
+    Found 1-bit register for signal <sclk_rise>.
+    Found 1-bit register for signal <SCLK_sync>.
+    Found 1-bit register for signal <SCLK_sync2>.
+    Found 8-bit register for signal <shift_reg>.
+    Found 1-bit register for signal <SS_sync>.
+    Found 1-bit register for signal <SS_sync2>.
+    Found 10-bit register for signal <timeout_cnt>.
+    Found 10-bit adder for signal <timeout_cnt$addsub0000> created at line 95.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <spi_slave_sync> synthesized.
+
+
+Synthesizing Unit <ctrl_fsm>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ctrl_fsm.vhd".
+    Found 1-bit register for signal <load_pwm>.
+    Found 1-bit register for signal <error>.
+    Found 17-bit comparator less for signal <error$cmp_lt0000> created at line 42.
+    Found 8-bit register for signal <reg_ctrl>.
+    Found 8-bit register for signal <reg_duty>.
+    Found 1-bit register for signal <state<0>>.
+    Found 17-bit register for signal <timeout_cnt>.
+    Found 17-bit adder for signal <timeout_cnt$addsub0000> created at line 43.
+    Summary:
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <ctrl_fsm> synthesized.
+
+
+Synthesizing Unit <decoder>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/decoder.vhd".
+WARNING:Xst:647 - Input <control<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <decoder> synthesized.
+
+
+Synthesizing Unit <ContGen_1>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd".
+    Found 12-bit up counter for signal <count_r>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <ContGen_1> synthesized.
+
+
+Synthesizing Unit <ContGen_2>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd".
+    Found 4-bit up counter for signal <count_r>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <ContGen_2> synthesized.
+
+
+Synthesizing Unit <regP>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/regP.vhd".
+    Found 4-bit register for signal <reg_r>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <regP> synthesized.
+
+
+Synthesizing Unit <pwm_module>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_module.vhd".
+WARNING:Xst:646 - Signal <DIV_CNT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <load_reg>.
+    Found 4-bit comparator less for signal <pwm$cmp_lt0000> created at line 99.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <pwm_module> synthesized.
+
+
+Synthesizing Unit <motor_ctrl_top>.
+    Related source file is "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd".
+    Found 1-bit register for signal <prev_SS>.
+    Found 1-bit register for signal <rst_sync>.
+    Found 1-bit register for signal <SS_filt>.
+    Found 1-bit xor2 for signal <SS_filt$xor0000> created at line 73.
+    Found 1-bit register for signal <ss_rise>.
+    Found 1-bit register for signal <SS_t1>.
+    Found 1-bit register for signal <SS_t2>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <motor_ctrl_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 1
+ 17-bit adder                                          : 1
+# Counters                                             : 4
+ 12-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 29
+ 1-bit register                                        : 19
+ 10-bit register                                       : 1
+ 17-bit register                                       : 1
+ 4-bit register                                        : 4
+ 8-bit register                                        : 4
+# Comparators                                          : 4
+ 10-bit comparator less                                : 1
+ 17-bit comparator less                                : 1
+ 4-bit comparator less                                 : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <u_spi/rState/FSM> on signal <rState[1:2]> with user encoding.
+-----------------------------
+ State           | Encoding
+-----------------------------
+ st_idle         | 00
+ st_shift        | 01
+ st_wait_ss_high | 10
+-----------------------------
+WARNING:Xst:2677 - Node <reg_ctrl_6> of sequential type is unconnected in block <u_fsm>.
+WARNING:Xst:2677 - Node <reg_ctrl_7> of sequential type is unconnected in block <u_fsm>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 1
+ 17-bit adder                                          : 1
+# Counters                                             : 4
+ 12-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 94
+ Flip-Flops                                            : 94
+# Comparators                                          : 4
+ 10-bit comparator less                                : 1
+ 17-bit comparator less                                : 1
+ 4-bit comparator less                                 : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <motor_ctrl_top> ...
+
+Optimizing unit <spi_slave_sync> ...
+
+Optimizing unit <ctrl_fsm> ...
+
+Optimizing unit <pwm_module> ...
+WARNING:Xst:2677 - Node <u_fsm/reg_ctrl_7> of sequential type is unconnected in block <motor_ctrl_top>.
+WARNING:Xst:2677 - Node <u_fsm/reg_ctrl_6> of sequential type is unconnected in block <motor_ctrl_top>.
+WARNING:Xst:2677 - Node <u_fsm/error> of sequential type is unconnected in block <motor_ctrl_top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block motor_ctrl_top, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 125
+ Flip-Flops                                            : 125
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : motor_ctrl_top.ngr
+Top Level Output File Name         : motor_ctrl_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 269
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 49
+#      LUT2                        : 15
+#      LUT3                        : 28
+#      LUT3_L                      : 2
+#      LUT4                        : 50
+#      LUT4_D                      : 8
+#      MUXCY                       : 55
+#      VCC                         : 1
+#      XORCY                       : 51
+# FlipFlops/Latches                : 125
+#      FD                          : 3
+#      FDC                         : 43
+#      FDCE                        : 74
+#      FDE                         : 1
+#      FDP                         : 3
+#      FDR                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 4
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250evq100-5 
+
+ Number of Slices:                      110  out of   2448     4%  
+ Number of Slice Flip Flops:            125  out of   4896     2%  
+ Number of 4 input LUTs:                161  out of   4896     3%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of     66    19%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_sys                            | BUFGP                  | 125   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_sync(rst_sync:Q)               | NONE(u_fsm/load_pwm)   | 119   |
+reset_sys                          | IBUF                   | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.404ns (Maximum Frequency: 185.034MHz)
+   Minimum input arrival time before clock: 1.731ns
+   Maximum output required time after clock: 7.549ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_sys'
+  Clock period: 5.404ns (frequency: 185.034MHz)
+  Total number of paths / destination ports: 1579 / 196
+-------------------------------------------------------------------------
+Delay:               5.404ns (Levels of Logic = 3)
+  Source:            u_pwm2/u_div/count_r_0 (FF)
+  Destination:       u_pwm2/u_reg_shadow/reg_r_0 (FF)
+  Source Clock:      clk_sys rising
+  Destination Clock: clk_sys rising
+
+  Data Path: u_pwm2/u_div/count_r_0 to u_pwm2/u_reg_shadow/reg_r_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  u_pwm2/u_div/count_r_0 (u_pwm2/u_div/count_r_0)
+     LUT4_D:I0->O         12   0.612   0.969  u_pwm2/u_div/count_r_cmp_eq00008 (u_pwm2/u_div/count_r_cmp_eq00008)
+     LUT3:I0->O            6   0.612   0.572  u_pwm2/u_div/count_r_cmp_eq000040 (u_pwm2/FRECPWM)
+     LUT4:I3->O            4   0.612   0.499  u_pwm2/load_reg_not00011 (u_pwm2/reload)
+     FDCE:CE                   0.483          u_pwm2/u_reg_shadow/reg_r_0
+    ----------------------------------------
+    Total                      5.404ns (2.833ns logic, 2.571ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_sys'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.731ns (Levels of Logic = 1)
+  Source:            SS_in (PAD)
+  Destination:       SS_t1 (FF)
+  Destination Clock: clk_sys rising
+
+  Data Path: SS_in to SS_t1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  SS_in_IBUF (SS_in_IBUF)
+     FD:D                      0.268          SS_t1
+    ----------------------------------------
+    Total                      1.731ns (1.374ns logic, 0.357ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_sys'
+  Total number of paths / destination ports: 46 / 8
+-------------------------------------------------------------------------
+Offset:              7.549ns (Levels of Logic = 4)
+  Source:            u_pwm1/u_cnt/count_r_0 (FF)
+  Destination:       R_PWM_M1 (PAD)
+  Source Clock:      clk_sys rising
+
+  Data Path: u_pwm1/u_cnt/count_r_0 to R_PWM_M1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.514   0.632  u_pwm1/u_cnt/count_r_0 (u_pwm1/u_cnt/count_r_0)
+     LUT4:I2->O            1   0.612   0.509  u_pwm1/pwm143 (u_pwm1/pwm143)
+     LUT3:I0->O            2   0.612   0.532  u_pwm1/pwm170_SW0 (N13)
+     LUT4:I0->O            1   0.612   0.357  R_PWM_M11 (R_PWM_M1_OBUF)
+     OBUF:I->O                 3.169          R_PWM_M1_OBUF (R_PWM_M1)
+    ----------------------------------------
+    Total                      7.549ns (5.519ns logic, 2.030ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.88 secs
+ 
+--> 
+
+Total memory usage is 4515024 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

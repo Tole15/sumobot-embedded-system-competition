@@ -1,0 +1,35 @@
+Command line:
+   tb_pwm_control_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  60594
+
+Tue Mar 18 11:51:22 2025
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 5650.99 Meg
+
+ Total Signals          : 10
+ Total Nets             : 6
+ Total Signal Drivers   : 6
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 3
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 385
+Total Line Count : 33
+
+** Failure:Fin de la simulación
+User(VHDL) Code Called Simulation Stop
+In process test.vhd:stimulus_process 
+ 
+
+
+ Total Simulation Time: 0.21875 sec
+
+ Current Memory Usage: 4864.56 Meg
+
+Tue Mar 18 12:48:18 2025
+

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Memory Summary:
     Program space        used    12h (    18) of  8000h bytes   (  0.1%)
@@ -7,3 +8,14 @@ Memory Summary:
     ID Location space    used     8h (     8) of     8h bytes   (100.0%)
     Data stack space     used     0h (     0) of   7A0h bytes   (  0.0%)
 
+=======
+
+Memory Summary:
+    Program space        used    12h (    18) of  8000h bytes   (  0.1%)
+    Data space           used     0h (     0) of   800h bytes   (  0.0%)
+    Configuration bits   used     7h (     7) of     7h words   (100.0%)
+    EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
+    ID Location space    used     8h (     8) of     8h bytes   (100.0%)
+    Data stack space     used     0h (     0) of   7A0h bytes   (  0.0%)
+
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4

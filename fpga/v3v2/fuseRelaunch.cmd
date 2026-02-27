@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/v3/tb_motor_ctrl_top_isim_beh.exe" -prj "/home/ise/v3/tb_motor_ctrl_top_beh.prj" "work.tb_motor_ctrl_top" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/tb_motor_ctrl_top_isim_beh.exe" -prj "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/tb_motor_ctrl_top_beh.prj" "work.tb_motor_ctrl_top" 

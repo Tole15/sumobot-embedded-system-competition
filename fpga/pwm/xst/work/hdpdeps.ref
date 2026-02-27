@@ -1,0 +1,6 @@
+V3 3
+FL C:/2025_4J/pwm/pwm.vhd 2025/03/18.12:23:36 P.20131013
+EN work/pwm_control 1742322218 FL C:/2025_4J/pwm/pwm.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/pwm_control/Behavioral 1742322219 \
+      FL C:/2025_4J/pwm/pwm.vhd EN work/pwm_control 1742322218

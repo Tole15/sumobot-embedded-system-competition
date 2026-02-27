@@ -4,9 +4,15 @@ use IEEE.NUMERIC_STD.ALL;
 
 package pwm_pkg is
   function to_slv (val  : natural; width : positive)
+<<<<<<< HEAD
            return std_logic_vector;
 			  
   function clog2 (val : natural) return natural;
+=======
+           return std_logic_vector;
+			  
+  function clog2 (val : natural) return natural;
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   
   component ContGen
     generic (
@@ -48,14 +54,23 @@ package pwm_pkg is
   end component;
 end package;
 
+<<<<<<< HEAD
 package body pwm_pkg is
+=======
+package body pwm_pkg is
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
 
   function to_slv (val  : natural; width : positive)
            return std_logic_vector is
   begin
     return std_logic_vector(to_unsigned(val, width));
+<<<<<<< HEAD
   end;
   
+=======
+  end;
+  
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   function clog2 (val : natural) return natural is
     variable tmp : natural := val - 1;  -- 0?0 bits; 1?0 bits
     variable n   : natural := 0;
@@ -65,6 +80,10 @@ package body pwm_pkg is
       n   := n + 1;
     end loop;
     return n;
+<<<<<<< HEAD
   end;
+=======
+  end;
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   
 end package body;

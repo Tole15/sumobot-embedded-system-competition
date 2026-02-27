@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Mar 18 12:23:48 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pwm_out" LOCATE = SITE "A9" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "button" LOCATE = SITE "G12" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

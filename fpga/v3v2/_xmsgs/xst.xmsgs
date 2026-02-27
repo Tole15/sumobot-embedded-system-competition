@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/motor_ctrl_top</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/motor_ctrl_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/motor_ctrl_top.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/motor_ctrl_top/structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/motor_ctrl_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/motor_ctrl_top.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ctrl_fsm</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/ctrl_fsm.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/ctrl_fsm.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ctrl_fsm/rtl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/ctrl_fsm.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/ctrl_fsm.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/decoder</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/decoder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/decoder.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/decoder/rtl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/decoder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/decoder.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/pwm_module</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/pwm_module.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/pwm_module.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/pwm_module/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/pwm_module.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/pwm_module.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/spi_slave_sync</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/spi_slave_sync.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/spi_slave_sync.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/spi_slave_sync/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/spi_slave_sync.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/spi_slave_sync.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ContGen</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/ContGen.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/ContGen.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ContGen/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/ContGen.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/ContGen.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/pwm_pkg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/pwm_pkg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/pwm_pkg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/pwm_pkg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/pwm_pkg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/pwm_pkg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/regP</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/regP.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/regP.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/regP/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/v3/regP.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/ise/v3/regP.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/v3/pwm_module.vhd</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ContGen</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">control&lt;7:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">DIV_CNT</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">reg_ctrl_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_fsm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">reg_ctrl_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_fsm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_fsm/reg_ctrl_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">motor_ctrl_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_fsm/reg_ctrl_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">motor_ctrl_top</arg>&gt;.
+</msg>
+
+</messages>
+

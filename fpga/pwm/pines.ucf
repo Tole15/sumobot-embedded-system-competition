@@ -1,0 +1,8 @@
+# Reloj
+NET "clk"   LOC = "B8";    # el reloj está en B8
+
+# Botón (BTN0)
+NET "button" LOC = "G12";  # Asigna el botón al pin G12
+
+# Salida PWM
+NET "pwm_out" LOC = "A9";  # Asigna la salida PWM a A9

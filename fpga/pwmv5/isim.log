@@ -1,0 +1,19 @@
+ISim log file
+Running: C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\tb_motor_ctrl_top_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/tb_motor_ctrl_top_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_motor_ctrl_top/u_dut/u_pwm1/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_motor_ctrl_top/u_dut/u_pwm2/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# run 50ms
+
+** Failure:End of simulation
+User(VHDL) Code Called Simulation Stop
+In process tb_motor_ctrl_top.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.

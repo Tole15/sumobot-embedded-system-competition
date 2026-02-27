@@ -1,0 +1,41 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/tb_dual_motor_pwm_led_isim_beh.exe -prj C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/tb_dual_motor_pwm_led_beh.prj work.tb_dual_motor_pwm_led 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/regP.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_pkg.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/ContGen.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_module.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sync_2ff.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/spi_pkg.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/spi_fsm_rx.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sipo_reg.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/motor_pwm_ctrl.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/edge_detect.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/dual_motor_pwm_top_led.vhd" into library work
+Parsing VHDL file "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/tb_dual_motor_pwm_led.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package pwm_pkg
+Compiling package spi_pkg
+Compiling architecture rtl of entity sync_2ff [sync_2ff_default]
+Compiling architecture rtl of entity edge_detect [\edge_detect("RISE")(1,4)\]
+Compiling architecture rtl of entity spi_fsm_rx [spi_fsm_rx_default]
+Compiling architecture rtl of entity sipo_reg [\sipo_reg(8)\]
+Compiling architecture rtl of entity ContGen [\ContGen(12,2499)\]
+Compiling architecture rtl of entity ContGen [\ContGen(4,15)\]
+Compiling architecture rtl of entity regP [\regP(4)\]
+Compiling architecture beh of entity pwm_module [\pwm_module(4,4,2499)\]
+Compiling architecture rtl of entity motor_pwm_ctrl [\motor_pwm_ctrl(4,4,2499)\]
+Compiling architecture rtl of entity dual_motor_pwm_top_led [dual_motor_pwm_top_led_default]
+Compiling architecture tb of entity tb_dual_motor_pwm_led
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 26 VHDL Units
+Built simulation executable C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/tb_dual_motor_pwm_led_isim_beh.exe
+Fuse Memory Usage: 36820 KB
+Fuse CPU Usage: 468 ms

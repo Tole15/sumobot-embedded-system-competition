@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/tb_dual_motor_pwm_led_isim_beh.exe" -prj "C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/tb_dual_motor_pwm_led_beh.prj" "work.tb_dual_motor_pwm_led" 

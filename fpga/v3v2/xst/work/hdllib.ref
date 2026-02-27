@@ -1,0 +1,16 @@
+AR spi_slave_sync behavioral /home/ise/v3/spi_slave_sync.vhd sub00/vhpl07 1746573853
+EN contgen NULL /home/ise/v3/ContGen.vhd sub00/vhpl02 1746573848
+AR decoder rtl /home/ise/v3/decoder.vhd sub00/vhpl11 1746573857
+EN motor_ctrl_top NULL /home/ise/v3/motor_ctrl_top.vhd sub00/vhpl14 1746573860
+EN regp NULL /home/ise/v3/regP.vhd sub00/vhpl04 1746573850
+AR pwm_module behavioral /home/ise/v3/pwm_module.vhd sub00/vhpl13 1746573859
+AR contgen behavioral /home/ise/v3/ContGen.vhd sub00/vhpl03 1746573849
+EN spi_slave_sync NULL /home/ise/v3/spi_slave_sync.vhd sub00/vhpl06 1746573852
+EN pwm_module NULL /home/ise/v3/pwm_module.vhd sub00/vhpl12 1746573858
+PH pwm_pkg NULL /home/ise/v3/pwm_pkg.vhd sub00/vhpl00 1746573846
+AR regp behavioral /home/ise/v3/regP.vhd sub00/vhpl05 1746573851
+AR motor_ctrl_top structural /home/ise/v3/motor_ctrl_top.vhd sub00/vhpl15 1746573861
+EN ctrl_fsm NULL /home/ise/v3/ctrl_fsm.vhd sub00/vhpl08 1746573854
+PB pwm_pkg pwm_pkg /home/ise/v3/pwm_pkg.vhd sub00/vhpl01 1746573847
+AR ctrl_fsm rtl /home/ise/v3/ctrl_fsm.vhd sub00/vhpl09 1746573855
+EN decoder NULL /home/ise/v3/decoder.vhd sub00/vhpl10 1746573856

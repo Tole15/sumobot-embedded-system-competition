@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/2025_4J/pwm/tb_pwm_control_isim_beh.exe" -prj "C:/2025_4J/pwm/tb_pwm_control_beh.prj" "work.tb_pwm_control" 

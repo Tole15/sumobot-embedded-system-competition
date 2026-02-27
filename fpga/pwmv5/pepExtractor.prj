@@ -1,0 +1,8 @@
+work	"ContGen.vhd"
+work	"ctrl_fsm.vhd"
+work	"decoder.vhd"
+work	"motor_ctrl_top.vhd"
+work	"pwm_module.vhd"
+work	"pwm_pkg.vhd"
+work	"regP.vhd"
+work	"spi_slave_sync.vhd"

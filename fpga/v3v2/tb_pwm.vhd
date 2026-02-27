@@ -35,12 +35,21 @@ begin
     wait for 200 ns;      -- Reset pulse
     rst <= '0';
 
+<<<<<<< HEAD
+    ancho <= "0111";      -- 7/16 ˜ 43.75 %
+=======
     ancho <= "0111";      -- 7/16 Ëœ 43.75 %
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
     load  <= '1';
     wait for CLK_PER;
     load  <= '0';
 
+<<<<<<< HEAD
+    wait for 2 ms;        -- Observe varios ciclos (40 periodos)
+    assert false report "FIN de simulación" severity failure;
+=======
     wait for 2 ms;        
     assert false report "FIN de simulaciÃ³n" severity failure;
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   end process;
 end sim;

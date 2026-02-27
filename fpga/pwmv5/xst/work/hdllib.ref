@@ -1,0 +1,16 @@
+AR spi_slave_sync behavioral C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/spi_slave_sync.vhd sub00/vhpl07 1746952061
+EN contgen NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd sub00/vhpl02 1746952056
+AR decoder rtl C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/decoder.vhd sub00/vhpl11 1746952065
+EN motor_ctrl_top NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd sub00/vhpl14 1746952068
+EN regp NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/regP.vhd sub00/vhpl04 1746952058
+AR pwm_module behavioral C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_module.vhd sub00/vhpl13 1746952067
+AR contgen behavioral C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd sub00/vhpl03 1746952057
+EN spi_slave_sync NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/spi_slave_sync.vhd sub00/vhpl06 1746952060
+EN pwm_module NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_module.vhd sub00/vhpl12 1746952066
+PH pwm_pkg NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_pkg.vhd sub00/vhpl00 1746952054
+AR regp behavioral C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/regP.vhd sub00/vhpl05 1746952059
+AR motor_ctrl_top structural C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd sub00/vhpl15 1746952069
+EN ctrl_fsm NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ctrl_fsm.vhd sub00/vhpl08 1746952062
+PB pwm_pkg pwm_pkg C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_pkg.vhd sub00/vhpl01 1746952055
+AR ctrl_fsm rtl C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ctrl_fsm.vhd sub00/vhpl09 1746952063
+EN decoder NULL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/decoder.vhd sub00/vhpl10 1746952064

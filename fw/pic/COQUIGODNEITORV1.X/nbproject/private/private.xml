@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
@@ -9,3 +10,16 @@
         </group>
     </open-files>
 </project-private>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Tole%20Mendoza/MPLABXProjectsSOP/COQUIGODNEITORV1.X/motores.c</file>
+            <file>file:/C:/Users/Tole%20Mendoza/MPLABXProjectsSOP/COQUIGODNEITORV1.X/motores.h</file>
+            <file>file:/C:/Users/Tole%20Mendoza/MPLABXProjectsSOP/COQUIGODNEITORV1.X/sensores_linea.h</file>
+        </group>
+    </open-files>
+</project-private>
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4

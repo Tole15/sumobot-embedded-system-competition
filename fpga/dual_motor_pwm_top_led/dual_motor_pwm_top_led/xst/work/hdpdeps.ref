@@ -1,0 +1,80 @@
+V3 46
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/ContGen.vhd 2025/05/03.17:44:25 P.20131013
+EN work/ContGen 1746371203 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/ContGen.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ContGen/rtl 1746371204 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/ContGen.vhd \
+      EN work/ContGen 1746371203
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/dual_motor_pwm_top_led.vhd 2025/05/04.08:44:11 P.20131013
+EN work/dual_motor_pwm_top_led 1746371220 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/dual_motor_pwm_top_led.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/pwm_pkg 1746371202 PH work/spi_pkg 1746371209
+AR work/dual_motor_pwm_top_led/rtl 1746371221 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/dual_motor_pwm_top_led.vhd \
+      EN work/dual_motor_pwm_top_led 1746371220 CP sync_2ff CP edge_detect \
+      CP spi_fsm_rx CP sipo_reg CP work/motor_pwm_ctrl
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/edge_detect.vhd 2025/05/03.17:42:01 P.20131013
+EN work/edge_detect 1746371212 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/edge_detect.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/edge_detect/rtl 1746371213 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/edge_detect.vhd \
+      EN work/edge_detect 1746371212
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/motor_pwm_ctrl.vhd 2025/05/04.08:46:49 P.20131013
+EN work/motor_pwm_ctrl 1746371218 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/motor_pwm_ctrl.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/pwm_pkg 1746371202
+AR work/motor_pwm_ctrl/rtl 1746371219 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/motor_pwm_ctrl.vhd \
+      EN work/motor_pwm_ctrl 1746371218 CP pwm_module
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_module.vhd 2025/05/03.17:41:32 P.20131013
+EN work/pwm_module 1746371207 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_module.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/pwm_pkg 1746371202
+AR work/pwm_module/beh 1746371208 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_module.vhd \
+      EN work/pwm_module 1746371207 CP ContGen CP regP
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_pkg.vhd 2025/05/03.17:44:10 P.20131013
+PH work/pwm_pkg 1746371201 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_pkg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 CD ContGen \
+      CD regP CD sipo_reg
+PB work/pwm_pkg 1746371202 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/pwm_pkg.vhd \
+      PH work/pwm_pkg 1746371201
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/regP.vhd 2025/05/03.17:44:43 P.20131013
+EN work/regP 1746371205 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/regP.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/regP/rtl 1746371206 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/regP.vhd \
+      EN work/regP 1746371205
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sipo_reg.vhd 2025/05/03.17:41:44 P.20131013
+EN work/sipo_reg 1746371216 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sipo_reg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/sipo_reg/rtl 1746371217 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sipo_reg.vhd \
+      EN work/sipo_reg 1746371216
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/spi_fsm_rx.vhd 2025/05/03.17:41:12 P.20131013
+EN work/spi_fsm_rx 1746371214 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/spi_fsm_rx.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/spi_fsm_rx/rtl 1746371215 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/spi_fsm_rx.vhd \
+      EN work/spi_fsm_rx 1746371214
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/spi_pkg.vhd 2025/05/04.08:21:49 P.20131013
+PH work/spi_pkg 1746371209 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/spi_pkg.vhd \
+      PB ieee/std_logic_1164 1381692176 CD sync_2ff CD edge_detect CD spi_fsm_rx
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sync_2ff.vhd 2025/05/03.17:42:12 P.20131013
+EN work/sync_2ff 1746371210 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sync_2ff.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/sync_2ff/rtl 1746371211 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/CoquineitorV1/dual_motor_pwm_top_led/sync_2ff.vhd \
+      EN work/sync_2ff 1746371210

@@ -31,13 +31,21 @@ architecture Behavioral of spi_slave_sync is
   signal shift_reg : std_logic_vector(DATA_WIDTH-1 downto 0) := (others=>'0');
   signal final_reg : std_logic_vector(DATA_WIDTH-1 downto 0) := (others=>'0');
 
+<<<<<<< HEAD
+  -- Contador de timeout de SCLK (opcional, aquí simple)
+=======
   -- Contador de timeout de SCLK
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   constant TIMEOUT_MAX : integer := 1000;
   signal timeout_cnt   : integer range 0 to TIMEOUT_MAX := 0;
 begin
   data_out <= final_reg;
 
+<<<<<<< HEAD
+  -- Doble sincronización entradas
+=======
   
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   sync_inputs: process(clk_sys, reset_sys)
   begin
     if reset_sys='1' then
@@ -54,7 +62,11 @@ begin
     end if;
   end process;
 
+<<<<<<< HEAD
+  -- Detecta flanco de subida de SCLK
+=======
  
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   detect_sclk: process(clk_sys, reset_sys)
   begin
     if reset_sys='1' then
@@ -69,7 +81,11 @@ begin
     end if;
   end process;
 
+<<<<<<< HEAD
+  -- FSM con timeout y espera de SS alta
+=======
   
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
   spi_fsm: process(clk_sys, reset_sys)
   begin
     if reset_sys='1' then
@@ -94,7 +110,11 @@ begin
             if timeout_cnt < TIMEOUT_MAX then
               timeout_cnt <= timeout_cnt + 1;
             else
+<<<<<<< HEAD
+              rState      <= ST_WAIT_SS_HIGH;  -- abortar
+=======
               rState      <= ST_WAIT_SS_HIGH;  
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
             end if;
           else
             final_reg <= shift_reg;

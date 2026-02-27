@@ -1,0 +1,28 @@
+Command line:
+   tb_dual_motor_pwm_led_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57831
+
+Sun May 04 09:54:29 2025
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5151.5 Meg
+
+ Total Signals          : 262
+ Total Nets             : 320
+ Total Signal Drivers   : 101
+ Total Blocks           : 34
+ Total Primitive Blocks : 26
+ Total Processes        : 78
+ Total Traceable Variables  : 68
+ Total Scalar Nets and Variables : 861
+
+ Total Simulation Time: 161.609 sec
+
+ Current Memory Usage: 4679.64 Meg
+
+Sun May 04 09:57:33 2025
+

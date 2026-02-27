@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/2025_4J/pwm/pwm_control.xst" -ofn "C:/2025_4J/pwm/pwm_control.syr" 
+xst -intstyle ise -ifn "C:/2025_4J/pwm/pwm_control.xst" -ofn "C:/2025_4J/pwm/pwm_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 pwm_control.ngc pwm_control.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o pwm_control_map.ncd pwm_control.ngd pwm_control.pcf 
+par -w -intstyle ise -ol high -t 1 pwm_control_map.ncd pwm_control.ncd pwm_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml pwm_control.twx pwm_control.ncd -o pwm_control.twr pwm_control.pcf 
+bitgen -intstyle ise -f pwm_control.ut pwm_control.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s250e-cp132-5 pwm_control.ngc pwm_control.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o pwm_control_map.ncd pwm_control.ngd pwm_control.pcf 
+par -w -intstyle ise -ol high -t 1 pwm_control_map.ncd pwm_control.ncd pwm_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml pwm_control.twx pwm_control.ncd -o pwm_control.twr pwm_control.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f pwm_control.ut pwm_control.ncd 
+xst -intstyle ise -ifn "C:/2025_4J/pwm/pwm_control.xst" -ofn "C:/2025_4J/pwm/pwm_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s250e-cp132-5 pwm_control.ngc pwm_control.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o pwm_control_map.ncd pwm_control.ngd pwm_control.pcf 
+par -w -intstyle ise -ol high -t 1 pwm_control_map.ncd pwm_control.ncd pwm_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml pwm_control.twx pwm_control.ncd -o pwm_control.twr pwm_control.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f pwm_control.ut pwm_control.ncd 
+xst -intstyle ise -ifn "C:/2025_4J/pwm/pwm_control.xst" -ofn "C:/2025_4J/pwm/pwm_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s250e-cp132-5 pwm_control.ngc pwm_control.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o pwm_control_map.ncd pwm_control.ngd pwm_control.pcf 
+par -w -intstyle ise -ol high -t 1 pwm_control_map.ncd pwm_control.ncd pwm_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml pwm_control.twx pwm_control.ncd -o pwm_control.twr pwm_control.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f pwm_control.ut pwm_control.ncd 

@@ -1,13 +1,23 @@
+<<<<<<< HEAD
+library IEEE;
+=======
 ⁶library IEEE;
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity ctrl_fsm is
   port(
     clk     : in  std_logic;
     rst     : in  std_logic;
+<<<<<<< HEAD
+    ss_rise : in  std_logic;           -- flanco ? de SS (viene del SPI)
+    byte_in : in  std_logic_vector(7 downto 0);
+    load_pwm: out std_logic;           -- pulso: datos listos
+=======
     ss_rise : in  std_logic;           
     byte_in : in  std_logic_vector(7 downto 0);
     load_pwm: out std_logic;           
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
     control : out std_logic_vector(7 downto 0);
     duty    : out std_logic_vector(7 downto 0)
   );
@@ -28,14 +38,22 @@ begin
         load_pwm  <= '0';
       else
         load_pwm <= '0';
+<<<<<<< HEAD
+        if ss_rise='1' then             -- acaba de llegar un byte
+=======
         if ss_rise='1' then 
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
           case state is
             when EXPECT_CTRL =>
               reg_ctrl <= byte_in;
               state    <= EXPECT_DUTY;
             when EXPECT_DUTY =>
               reg_duty <= byte_in;
+<<<<<<< HEAD
+              load_pwm <= '1';           -- pareja completa
+=======
               load_pwm <= '1';           
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
               state    <= EXPECT_CTRL;
           end case;
         end if;

@@ -1,0 +1,8 @@
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\regP.vhd"
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\pwm_pkg.vhd"
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\ContGen.vhd"
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\spi_slave_sync.vhd"
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\pwm_module.vhd"
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\decoder.vhd"
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\ctrl_fsm.vhd"
+vhdl work "C:\Users\ZiggyStardust\OneDrive\Documentos\pwm\pwmv5\motor_ctrl_top.vhd"

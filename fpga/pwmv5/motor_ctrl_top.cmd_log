@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.xst" -ofn "C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.syr" 

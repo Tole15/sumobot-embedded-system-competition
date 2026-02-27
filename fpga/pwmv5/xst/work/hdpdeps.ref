@@ -1,0 +1,60 @@
+V3 30
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd 2025/05/11.02:26:30 P.20131013
+EN work/ContGen 1746952056 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ContGen/behavioral 1746952057 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ContGen.vhd \
+      EN work/ContGen 1746952056
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ctrl_fsm.vhd 2025/05/11.02:26:30 P.20131013
+EN work/ctrl_fsm 1746952062 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ctrl_fsm.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ctrl_fsm/rtl 1746952063 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/ctrl_fsm.vhd \
+      EN work/ctrl_fsm 1746952062
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/decoder.vhd 2025/05/11.02:26:30 P.20131013
+EN work/decoder 1746952064 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/decoder.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/decoder/rtl 1746952065 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/decoder.vhd \
+      EN work/decoder 1746952064
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd 2025/05/11.02:26:30 P.20131013
+EN work/motor_ctrl_top 1746952068 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/pwm_pkg 1746952055
+AR work/motor_ctrl_top/structural 1746952069 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/motor_ctrl_top.vhd \
+      EN work/motor_ctrl_top 1746952068 CP work/spi_slave_sync CP work/ctrl_fsm \
+      CP work/decoder CP work/pwm_module
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_module.vhd 2025/05/11.02:26:30 P.20131013
+EN work/pwm_module 1746952066 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_module.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/pwm_pkg 1746952055
+AR work/pwm_module/behavioral 1746952067 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_module.vhd \
+      EN work/pwm_module 1746952066 CP work/ContGen CP work/regP
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_pkg.vhd 2025/05/11.02:26:30 P.20131013
+PH work/pwm_pkg 1746952054 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_pkg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+PB work/pwm_pkg 1746952055 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/pwm_pkg.vhd \
+      PH work/pwm_pkg 1746952054
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/regP.vhd 2025/05/11.02:26:30 P.20131013
+EN work/regP 1746952058 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/regP.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/regP/behavioral 1746952059 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/regP.vhd \
+      EN work/regP 1746952058
+FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/spi_slave_sync.vhd 2025/05/11.02:26:30 P.20131013
+EN work/spi_slave_sync 1746952060 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/spi_slave_sync.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/spi_slave_sync/Behavioral 1746952061 \
+      FL C:/Users/ZiggyStardust/OneDrive/Documentos/pwm/pwmv5/spi_slave_sync.vhd \
+      EN work/spi_slave_sync 1746952060

@@ -19,7 +19,11 @@
 	end entity;
 
 	architecture behavioral of pwm_module is
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
 		constant DIV_WIDTH : natural := clog2(DIV_CONST + 1);
 
 	  signal DIV_CNT : std_logic_vector(DIV_WIDTH-1 downto 0);
@@ -29,7 +33,11 @@
 	  signal CMP    : std_logic_vector(DUTY_WIDTH-1 downto 0);
 	  signal reload : std_logic;
 
+<<<<<<< HEAD
 	begin
+=======
+	begin
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
 
 	  u_div : ContGen
 		 generic map (Nbits => DIV_WIDTH, Cuenta_Fin => DIV_CONST)
@@ -39,7 +47,11 @@
 			RST    => rst,
 			conteo => DIV_CNT,
 			CEO    => FRECPWM
+<<<<<<< HEAD
 		 );
+=======
+		 );
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4
 
 	  u_cnt : ContGen
 		 generic map (Nbits => CNT_WIDTH, Cuenta_Fin => 2**CNT_WIDTH - 1)
@@ -76,5 +88,10 @@
 	  pwm <= '1' when unsigned(CNT) < unsigned(CMP) else '0';
 
 	end behavioral;
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> c247ddddf8102dd7b5f2e1b32e1eb3e55a767da4

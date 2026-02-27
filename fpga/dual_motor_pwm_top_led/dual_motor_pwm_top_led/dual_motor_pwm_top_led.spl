@@ -1,0 +1,14 @@
+[Inputs]
+clk_sys
+reset
+SCLK_in
+MOSI_in
+SS_in
+[Outputs]
+=R_PWM[1:0]=
+=L_PWM[1:0]=
+=R_EN[1:0]=
+=L_EN[1:0]=
+=LED_DATA[7:0]=
+=LED_OUT[7:0]=
+[BiDir]

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\2025_4J\pwm\pwm_control.ncd
+OUTFILE=C:\2025_4J\pwm\pwm_control.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5cp132
+WORKINGDIR=C:\2025_4J\pwm
+LICENSE=WebPack
+USER_INFO=212356822_0_0_274

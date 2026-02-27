@@ -1,0 +1,27 @@
+Command line:
+   tb_motor_ctrl_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  38424
+
+Sun May 11 18:22:00 2025
+
+
+ Elaboration Time: 0.08 sec
+
+ Current Memory Usage: 199.004 Meg
+
+ Total Signals          : 159
+ Total Nets             : 207
+ Total Signal Drivers   : 69
+ Total Blocks           : 18
+ Total Primitive Blocks : 14
+ Total Processes        : 56
+ Total Traceable Variables  : 36
+ Total Scalar Nets and Variables : 713
+
+** Failure:FIN DE PRUEBA
+User(VHDL) Code Called Simulation Stop
+In process tb_motor_ctrl_top.vhd:stim 
+ 
+
